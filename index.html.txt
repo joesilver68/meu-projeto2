@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto 01 - Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>O Meu Primeiro Projeto Web</h1>
+    <p>Desenvolvido no módulo de Fundamentos Web.</p>
+  </header>
+</body>
+</html>
