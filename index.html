@@ -2,13 +2,104 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Projeto 01 - Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Formação | Desenvolvimento Web & Software</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>O Meu Primeiro Projeto Web</h1>
-    <p>Desenvolvido no módulo de Fundamentos Web.</p>
+  <header class="topbar">
+    <div class="container nav-flex">
+      <a href="#" class="logo">&lt;DevPortfolio /&gt;</a>
+      <nav class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#competencias">Competências</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contacto">Contacto</a>
+        <button id="theme-toggle" class="btn-icon" title="Alternar tema">☀️ / 🌙</button>
+      </nav>
+    </div>
   </header>
+
+  <main>
+    <!-- Hero / Apresentação -->
+    <section id="sobre" class="hero container">
+      <span class="badge">Cursos de Formação • 2026</span>
+      <h1>Olá, sou <span class="highlight">Joe Silver</span> — Formador</h1>
+      <p class="subtitle">
+        Este portfólio reúne os projetos práticos, exercícios de lógica e aplicações web desenvolvidos ao longo do meu percurso formativo.
+      </p>
+      <div class="hero-actions">
+        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-secondary">Perfil GitHub</a>
+      </div>
+    </section>
+
+    <!-- Competências -->
+    <section id="competencias" class="section container">
+      <h2>Módulos & Competências Técnicas</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Front-End Web</h3>
+          <p>HTML5 Semântico, CSS3 Moderno (Flexbox & Grid), Design Responsivo.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Programação & Lógica</h3>
+          <p>JavaScript (ES6+), manipulação do DOM, consumo de APIs e estruturas de dados.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Controlo de Versões</h3>
+          <p>Git, fluxos de trabalho no GitHub, branches, commits semânticos e GitHub Pages.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos com Filtro -->
+    <section id="projetos" class="section container">
+      <div class="section-header">
+        <h2>Projetos do Curso</h2>
+        <div class="filter-bar" role="group" aria-label="Filtrar projetos">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="web">HTML/CSS</button>
+          <button class="filter-btn" data-filter="js">JavaScript</button>
+          <button class="filter-btn" data-filter="dados">Dados/SQL</button>
+        </div>
+      </div>
+
+      <div id="projects-grid" class="projects-grid"></div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section container contact-box">
+      <h2>Contacto & Ligações</h2>
+      <p>Interessado em acompanhar a minha evolução ou trocar ideias sobre projetos?</p>
+      <div class="hero-actions">
+        <a href="mailto:exemplo@email.pt" class="btn btn-primary">Enviar Email</a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-secondary">Repositórios GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de Detalhes do Projeto -->
+  <div id="project-modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button id="close-modal" class="close-btn" aria-label="Fechar">&times;</button>
+      <span id="modal-tag" class="badge"></span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <h4>O que foi aprendido:</h4>
+      <ul id="modal-learnings"></ul>
+      <div class="modal-footer">
+        <a id="modal-repo" href="#" target="_blank" rel="noopener" class="btn btn-primary">Ver Código no GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Desenvolvido durante o Curso de Formação • Publicado com GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

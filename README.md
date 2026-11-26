@@ -1,14 +1,15 @@
 # Portfólio de Projetos — Curso de Formação
 
-Repositório dedicado aos projetos práticos e exercícios desenvolvidos ao longo da formação.
+Aplicação web desenvolvida para apresentar os projetos práticos, competências técnicas e evolução ao longo da formação.
 
-## Projetos Incluídos
+## Funcionalidades
+- **Catálogo interativo** com filtragem por área tecnológica (`HTML/CSS`, `JavaScript`, `Dados/SQL`).
+- **Janela de detalhes (Modal)** com os objetivos e aprendizagens de cada módulo.
+- **Modo Escuro / Modo Claro** alternável na barra de navegação.
+- **Layout responsivo** adaptado a computador, tablet e telemóvel.
 
-| Módulo / Projeto | Tecnologias | Descrição |
-| :--- | :--- | :--- |
-| **01. Página de Apresentação** | HTML5, CSS3 | Estruturação semântica e estilização responsiva básica. |
-| **02. Gestor de Tarefas** | JavaScript | Lógica de manipulação de arrays e funções para gerir tarefas via consola. |
-
-## Como explorar
-1. Clonar o repositório: `git clone <url-do-seu-repositorio>`
-2. Abrir os ficheiros HTML no navegador ou executar os scripts JavaScript com Node.js (`node 02-gestao-tarefas-js/app.js`).# O meu Primeiro Projeto
+## Tecnologias Utilizadas
+- HTML5 Semântico
+- CSS3 (Custom Properties, Grid, Flexbox)
+- JavaScript (ES6+)
+- Git & GitHub Pages
